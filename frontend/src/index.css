@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pravah-aqua/30 text-pravah-navy font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom maplibre popup styling */
+.maplibregl-popup-content {
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(16, 93, 99, 0.2);
+  border: 1px solid rgba(22, 127, 131, 0.2);
+  font-family: 'Inter', sans-serif;
+  color: #183447;
+}
+
+.maplibregl-popup-close-button {
+  padding: 4px 8px;
+  font-size: 16px;
+  color: #647987;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(220, 236, 244, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: #167F83;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #105D63;
+}
